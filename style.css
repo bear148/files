@@ -1,3 +1,10 @@
+@font-face {
+	font-family: 'Ubuntu';
+	font-style: normal;
+	font-weight: 400;
+	src: local('Ubuntu'), url('https://themes.googleusercontent.com/static/fonts/ubuntu/v5/_xyN3apAT_yRRDeqB3sPRg.woff') format('woff');
+}
+
 html  {
     background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/image/Open_Rails_2024-01-05_09-33-59.png');    
     background-size: cover;
@@ -10,7 +17,59 @@ body {
     background-color: rgb(255, 252, 231);
     font-family: Arial, sans-serif;
     margin: 0;
-    padding: 20px;
     width: 970px;
     font-family: Ubuntu, 'Liberation Sans', sans-serif;;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    color: blue;
+    font-family: Ubuntu, 'Liberation Sans', sans-serif;
+}
+
+#home-nav {
+    background-color: rgb(30, 30, 30);
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: .5em;
+}
+
+#home-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 10px;
+    overflow: hidden;
+    display: flex;
+    justify-content: left;
+}
+
+#home-nav li {
+    margin: 0 15px;
+}
+
+#home-nav a {
+    text-decoration: none;
+    color: rgb(147, 147, 147);
+    font-weight: bold;
+    font-size: 18px;
+    height: 100%;
+    width: 100%;
+}
+
+#home-nav a:hover {
+    color: white;
+}
+
+.sub {
+    margin: 0;
+    color: rgb(59, 59, 255);
+    margin-bottom: .5em;
+}
+
+.focus-img {
+    background-image: url(./image/Open_Rails_2024-01-05_03-27-44.png);
+    width: 970px;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
 }
