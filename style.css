@@ -14,7 +14,7 @@ html  {
 
 body {
     color: black;
-    background-color: rgb(255, 252, 231);
+    background-color: #ffe;
     font-family: Arial, sans-serif;
     margin: 0;
     width: 970px;
@@ -50,8 +50,6 @@ h1,h2,h3,h4,h5,h6 {
 #home-nav a {
     text-decoration: none;
     color: rgb(147, 147, 147);
-    font-weight: bold;
-    font-size: 18px;
     height: 100%;
     width: 100%;
 }
@@ -72,4 +70,8 @@ h1,h2,h3,h4,h5,h6 {
     height: 250px;
     background-size: cover;
     background-position: center;
+}
+
+h1 {
+    text-align: center;
 }
