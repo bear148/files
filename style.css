@@ -1,3 +1,8 @@
+:root {
+    --pseudo-black: #222;
+    --pseudo-white: #eee;
+}
+
 @font-face {
 	font-family: 'Ubuntu';
 	font-style: normal;
@@ -10,15 +15,21 @@ html  {
     background-size: cover;
     display: flex;
     justify-content: center;
+    box-sizing: border-box;
+}
+
+* {
+    box-sizing: border-box;
 }
 
 body {
-    color: black;
+    color: var(--pseudo-black);
     background-color: #ffe;
     font-family: Arial, sans-serif;
     margin: 0;
     width: 970px;
-    font-family: Ubuntu, 'Liberation Sans', sans-serif;;
+    font-family: Ubuntu, 'Liberation Sans', sans-serif;
+    font-size: 14px;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -55,7 +66,7 @@ h1,h2,h3,h4,h5,h6 {
 }
 
 #home-nav a:hover {
-    color: white;
+    color: var(--pseudo-white);
 }
 
 .sub {
@@ -74,4 +85,44 @@ h1,h2,h3,h4,h5,h6 {
 
 h1 {
     text-align: center;
+}
+
+div.thirds {
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+div.thirds > div.card:not(:last-child) {
+    border-right: 1px solid gray;
+}
+
+div.thirds > div.card {
+    display: flex;
+    align-items: center;
+    width: 33.333333333333%;
+    flex-direction: column;
+    padding-left: 0.5em;
+    padding-right: 0.5em;
+}
+
+div.card > div.heading {
+    background-color: lightgray;
+    border-radius: 5px;
+    color: var(--pseudo-black);
+    padding: 1em;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+div.heading > h3 {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+}
+
+div.card > p {
+    width: 100%;
+    margin: 0;
+    padding: 0;
 }
